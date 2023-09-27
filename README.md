@@ -9,17 +9,17 @@
 
 ---
 
-##  Descrição do projeto
+##  Descrição do projeto:
 
 <p> MVP para a disciplina de Full Stack avançado da pós-graduação em Desenvolvimento Full Stack da PUC-RJ. <br>
 Foi desenvolvida uma API de uma whishlist, que será consumida por um front-end onde o usuário, poderá visualizar, adicionar ou excluir dados a sua lista de desejos. </p> 
 
-#### *O Front relacionada a essa aplicação está disponível no link:* [https://github.com/lbsilva8/puc_mvp_1_front](https://github.com/lbsilva8/puc_mvp_1_front*)
+#### *O Front-end relacionada a essa aplicação está disponível no link:* [https://github.com/lbsilva8/puc_mvp_3_front](https://github.com/lbsilva8/puc_mvp_3_front*)
 ---
 
-## Como executar
+## Como executar:
 
-### Instalação:
+### Instalação
 - Clonar o repositório ou realizar o download do mesmo;
 - Criar um ambiente virtual e ativa-lo;
 - Instalar todas as bibliotecas python listadas no `requirements.txt`:
@@ -37,7 +37,7 @@ Foi desenvolvida uma API de uma whishlist, que será consumida por um front-end 
 
 ---
 
-### Executar através do Docker:
+### Executar através do Docker
 
 Certifique-se de ter o [Docker](https://docs.docker.com/engine/install/) instalado e em execução em sua máquina.
 
@@ -45,13 +45,13 @@ Navegue até o diretório que contém o Dockerfile e o requirements.txt no termi
 Execute **como administrador** o seguinte comando para construir a imagem Docker:
 
 ```
-$ docker build -t serie-api .
+$ docker build -t PUC_MVP_3_API .
 ```
 
 Uma vez criada a imagem, para executar o container basta executar, **como administrador**, seguinte o comando:
 
 ```
-$ docker run -p 5000:5000 serie-api
+$ docker run -p 5000:5000 PUC_MVP_3_API
 ```
 
 Uma vez executando, para acessar a API, basta abrir o [http://localhost:5000/#/](http://localhost:5000/#/) no navegador.
@@ -60,6 +60,7 @@ Uma vez executando, para acessar a API, basta abrir o [http://localhost:5000/#/]
 ## Funcionalidades
 
 - [x] Método GET, para visualizar todas as séries cadastradas no banco
+- [x] Método GET, para Visualizar apenas os animes cadastrados no banco
 - [x] Método GET, para busca de uma série atravez do ID
 - [x] Método POST, para cadastro de novos dados a base de dados
 - [x] Método DELETE, para exclusão de dados atravez do nome da série

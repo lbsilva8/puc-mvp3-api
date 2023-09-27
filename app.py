@@ -80,9 +80,9 @@ def get_series():
 @app.get('/anime', tags=[serie_tag],
          responses={"200": SerieCategoriaSchema, "404": ErrorSchema})
 def get_anime():
-    """ Faz a busca de todas as séries cadastradas
+    """ Faz a busca de todos os animes cadastrados
     
-    Retorna uma representação da listagem de séries.
+    Retorna uma representação da listagem de animes.
     """
     logger.debug(f"Coletando series")
     session = Session()

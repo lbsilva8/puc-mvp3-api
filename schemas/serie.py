@@ -31,7 +31,7 @@ class ListagemSeriesSchema(BaseModel):
 
 class SerieCategoriaSchema(BaseModel):
     """ Define como deve ser a estrutura que representa a busca. Que será
-        feita apenas com base no nome da serie.
+        feita apenas com base na categoria da série.
     """
     categoria:List[SerieSchema]
 
